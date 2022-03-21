@@ -7,11 +7,10 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--bg-color);
-  font-family: 'Poppins', sans-serif;
   width: 100vw;
   height: 100vh;
-
+  background-color: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
   color: var(--color-font);
 }
 
@@ -42,7 +41,6 @@ nav ul li a {
   position: relative;
   display: flex;
   align-items: center;
-  /* width: 15vw; */
 }
 .search img {
   width: 1rem;
@@ -79,6 +77,7 @@ nav ul li a {
 }
 
 .app {
+  position: relative;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -141,5 +140,7 @@ nav ul li a {
 @media (max-width: 1000px) {
   body {
     font-size: 87%;
+    display: grid;
+    justify-items: center;
   }
 }
