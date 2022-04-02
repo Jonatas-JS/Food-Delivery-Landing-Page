@@ -30,7 +30,7 @@ nav ul{
   list-style: none;
   text-align: center;
   padding: 0;
-  gap: 10%;
+  gap: 1rem;
 }
 nav ul li a {
   text-decoration: none;
@@ -136,11 +136,42 @@ nav ul li a {
   color: #909090;
   font-weight: 400;
 }
+.image-food img {
+  max-width: 45vw;
+}
 
 @media (max-width: 1000px) {
   body {
     font-size: 87%;
     display: grid;
     justify-items: center;
+  }
+  nav {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+  nav > img {
+    width: 7rem;
+  }
+  .menubar {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul {
+    margin-top: .2rem;
+    gap: 3.5rem;
+  }
+  .search {
+    margin-top: .5rem;
+  }
+  .search input {
+    width: 380px;
+  }
+  .search span {
+    left: 20.5rem;
+  }
+  .image-food img {
+    width: 1px;
   }
 }
